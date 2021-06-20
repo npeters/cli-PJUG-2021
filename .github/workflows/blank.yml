@@ -1,0 +1,54 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            gu-binary: gu
+            jbang-wrapper: jbang
+          - os: macos-latest
+            gu-binary: gu
+            jbang-wrapper: jbang
+        
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup GraalVM environment
+        uses: DeLaGuardo/setup-graalvm@4.0
+        with:
+          # The GraalVM version, defaults to 21.1
+          graalvm: "21.1.0" 
+          java: "java16"
+          arch: "amd64"
+      - name: Install native-image component
+        run: |
+          ${{matrix.gu-binary}} install native-image      
+      
+      - name: jbang-build-native
+        run: |
+          cd 01_helloword;
+          ./${{matrix.jbang-wrapper}} export portable -n -O helloword.bin helloword.java
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v2
+        with:
+          name: helloword-${{ matrix.os }}
+          path: 01_helloword/helloword.bin
+          retention-days: 5
