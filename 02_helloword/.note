@@ -1,0 +1,2 @@
+ <(./HelloWordQuarkus.java generate-completion)
+

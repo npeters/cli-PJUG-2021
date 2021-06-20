@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11/"/>
+	<classpathentry sourcepath="/Users/npeters/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/3.9.5/9bc4992d3b7d98885a2c42c301654f54b13a5747/picocli-3.9.5-sources.jar" kind="lib" path="/Users/npeters/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/3.9.5/f659a2feef0e8f7f8458aaf7d36c4d92f65320c8/picocli-3.9.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/npeters/.m2/repository/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/npeters/.gradle/caches/modules-2/files-2.1/com.auth0/java-jwt/3.8.0/2eb47f26d32e5af16bafc706b1c80603dbfa7f7d/java-jwt-3.8.0-sources.jar" kind="lib" path="/Users/npeters/.gradle/caches/modules-2/files-2.1/com.auth0/java-jwt/3.8.0/3eb344e5320f2740868b6ce8186e2fb061428331/java-jwt-3.8.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/npeters/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/npeters/.gradle/caches/modules-2/files-2.1/org.jline/jline/3.9.0/5a500d5dca99ea93aba267cea4664c246b83f4d7/jline-3.9.0-sources.jar" kind="lib" path="/Users/npeters/.gradle/caches/modules-2/files-2.1/org.jline/jline/3.9.0/da6eb8ebdd131ec41f7e42e7e77b257868279698/jline-3.9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/npeters/.gradle/caches/modules-2/files-2.1/com.pivovarit/throwing-function/1.5.0/cdbd1ebbda5f533c74d039a4e411e745c6d2204d/throwing-function-1.5.0-sources.jar" kind="lib" path="/Users/npeters/.gradle/caches/modules-2/files-2.1/com.pivovarit/throwing-function/1.5.0/f07ba213346785a4651ac93d36bef6786ffb71d1/throwing-function-1.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/npeters/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/npeters/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/npeters/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+</classpath>
